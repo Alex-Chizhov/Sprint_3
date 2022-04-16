@@ -24,7 +24,7 @@ public class CreateOrderTest {
         this.orderModel = orderModel;
     }
 
-    @Parameterized.Parameters(name="Test data: {0}")
+    @Parameterized.Parameters(name="{index} Test data: {0}")
     public static Object[][] getData() {
         return new Object[][]{
                 {new OrderModel(OrderDataGenerator.generateOrderData(), List.of("BLACK"))},
