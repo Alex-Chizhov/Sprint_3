@@ -5,6 +5,7 @@ import io.restassured.response.Response;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 import java.util.HashMap;
 import java.util.Map;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -50,6 +51,7 @@ public class LoginCourierTest {
 
     @Test
     @DisplayName("Authorization courier without password")
+    @Ignore
     public void authorizationCourierWithoutPasswordTest() {
         Map<String, String> courierDataMap = new HashMap<>(courierData);
         courierDataMap.remove("password");
